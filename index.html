@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+
+    <link href="css/grid.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="./ScrollPly/JS/wow.min.js" type="text/javascript"></script>
+    <link href="./ScrollPly/CSS/animate.css" rel="stylesheet" type="text/css" />
+
+
+
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .fullscreen_bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+            background-size: contain;
+        }
+
+        .fullscreen_bg_video {
+            position: relative;
+            width: auto;
+            height: 700px;
+            min-width: 40%;
+            min-height: 40%;
+        }
+
+        #home {
+            height: 700px;
+            color: #fff;
+        }
+
+        #about {
+            padding-top: 50px;
+            height: 750px;
+            color: #fff;
+            background-color: #000000;
+        }
+
+        #edu {
+            padding-top: 50px;
+            height: 750px;
+            color: #fff;
+            background-color: #24305E;
+        }
+
+        #skill {
+            padding-top: 50px;
+            height: 750px;
+            color: #fff;
+            background-color: #A8D0E6;
+        }
+
+        #ws {
+            padding-top: 50px;
+            height: 750px;
+            color: #fff;
+            background-color: #46344E;
+        }
+
+        #arc {
+            padding-top: 50px;
+            height: 750px;
+            color: #fff;
+            background-color: #5A5560;
+            position: sticky;
+        }
+
+        #myNavbar a:hover {
+            color: #66FCF1;
+        }
+
+        .top-\[0\] {
+            top: 0;
+        }
+
+        .sticky {
+            position: sticky;
+        }
+
+        #texthead {
+            margin-top: 200px;
+        }
+
+        .social i {
+            color: #66FCF1;
+        }
+
+        #about img {
+            height: 400px;
+            width: 250px;
+            margin-top: 70px;
+            margin-left: 50px;
+            border-radius: 25px;
+        }
+
+        #about img:hover {
+            box-shadow: 0 0 10px white;
+            transition: 0.5s ease-in-out;
+        }
+
+        .unho {
+            display: inline-block;
+            position: relative;
+            color: white;
+        }
+
+        .unho::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .unho:hover::after,
+        .unho:focus::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        #skill h3 {
+            color: #404b45;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" style="border-radius: 0%; margin-bottom: 0%;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-left" href="#"><img src="./Kabir-removebg-preview.png" style="height: 150px; margin-top: -65px;"></a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#edu">Education</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#ws">workshop</a></li>
+                        <li><a href="#arc">Achievements</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative">
+        <div id="home" class="container-fluid">
+            <div class="fullscreen_bg">
+                <video src="./blackkk.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+            </div>
+            <div id="texthead"
+                class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-xs-5 col-xs-offset-2">
+                <h1 class="wow fadeInLeft " data-wow-duration="1s" style="color: #66FCF1;">Hi,</h1>
+                <h1 class="wow fadeInDown" data-wow-duration="2s" style="color: #66FCF1;">I'm Kabir <span
+                        class="wow fadeInDown" data-wow-duration="1.5s" style="color: white">Rathod</span></h1>
+                <h3 class="wow fadeInRight" data-wow-duration="2.75s" style="color: #66FCF1">I'm an Database Developer...</h3>
+            </div>
+            <div class="col-lg-2 col-lg-offset-2">
+                <h1 class="social" style="margin-top: 230px;">
+                    <div>
+                        <a href="#linkdn" class="wow fadeInUp" data-wow-duration="1s"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div>
+                        <a href="#github" class="wow fadeInUp" data-wow-duration="2s"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div>
+                        <a href="#telegram" class="wow fadeInUp" data-wow-duration="3s"><i class="fas fa-phone-square-alt"></i></a>
+                    </div>
+                </h1>
+            </div>
+        </div>
+        <div class="sticky top-[0]">
+            <div id="about" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <img src="./me.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-2" style="padding-top: 70px;">
+                        <h1 class="wow fadeInLeft unho" data-wow-duration="3s" style="color: white;"><i class="fas fa-user"></i>&nbsp;&nbsp; About Me</h1>
+                        <h3>Database Developer </h3>
+                        <h5>I am a database developer based in Ahmedabad,india. I am a passion for building efficient
+                            and scalable solutions. I have a strong understanding of SQL and database design principles,
+                            and I am always looking for new ways to use technology to solve problems. I am also a quick
+                            learner and I am always eager to take on new challenges.</h5>
+                        <h3 class="wow fadeInUp" data-wow-duration="3s"><i class="fa fa-envelope wow fadeInUp"
+                                data-wow-duration="3s"></i>&nbsp;&nbsp;kabirrathod007@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky top-[0]">
+            <div id="edu" class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <h1 class="unho"><i class="fas fa-university"></i>&nbsp;&nbsp;</i>Education</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <h3 class="wow fadeInLeft" data-wow-duration="3s">Silver Oak University</h3>
+                        <h3 class="wow fadeInLeft" data-wow-duration="3s" style="color:#66FCF1;">B.tech IT</h3>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-3">
+                        <h3 class="wow fadeInRight" data-wow-duration="3s">2021-2026</h3>
+                        <h3 class="wow fadeInRight" data-wow-duration="3s" style="color:#66FCF1;">Pursuing</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <h3 class="wow fadeInLeft" data-wow-duration="3s">SGG School</h3>
+                        <h3 class="wow fadeInLeft" data-wow-duration="3s" style="color: #66FCF1;">HSC</h3>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-3">
+                        <h3 class="wow fadeInRight" data-wow-duration="3s">2020-2021</h3>
+                        <h3 class="wow fadeInRight" data-wow-duration="3s" style="color: #66FCF1;">81%</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky top-[0]">
+            <div id="skill" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-2">
+                        <h1 class="unho" style="color: #0B0C10;"><a style="color: #462e52">S</a>kills</h1>
+                        <h3><i class="fab fa-html5"></i>&nbsp;&nbsp;HTML</h3>
+                        <h3><i class="fab fa-css3-alt"></i>&nbsp;&nbsp;CSS</h3>
+                        <h3><i class="fab fa-bootstrap"></i>&nbsp;&nbsp;Bootstap</h3>
+                        <h3><i class="fas fa-laptop"></i>&nbsp;&nbsp;c</h3>
+                        <h3><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;c++</h3>
+                        <h3><i class="fab fa-java"></i>&nbsp;&nbsp;Core Java</h3>
+                        <h3><i class="fa fa-database " aria-hidden="true"></i>&nbsp;&nbsp;SQL</h3>
+                        <h3><i class="fas fa-server"></i>&nbsp;&nbsp;DBMS</h3>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-3 wow fadeInRight" data-wow-duration="5s">
+                        <h1 class="unho" style="color: #0B0C10;"><a style="color: #462e52;">H</a>obbis and <a style="color: #462e52;">I</a>nterests</h1>
+                        <h3><i class="fas fa-guitar"></i>&nbsp;&nbsp;Rhythm Guitarist</h3>
+                        <h3><i class="fas fa-book-reader"></i>&nbsp;&nbsp;Reading scriptures</h3>
+                        <h3><i class="fas fa-dice-two"></i>&nbsp;&nbsp;Cricket</h3>
+                        <h3><i class="fab fa-xbox"></i>&nbsp;&nbsp;Competitive Valorant player</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky top-[0]">
+            <div id="ws" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-2">
+                        <h1 class="wow fadeInLeft" data-wow-duration="2s"><a style="color: #66FCF1;">W</a>orkshops
+                            <br>And<br> <a style="color: #66FCF1;">S</a>eminars
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-7 wow fadeInRight" data-wow-duration="3.3s">
+                        <H2>IEEE Member</H2>
+                        <h4 style="color: #A8D0E6;">(2021-2022)</h4>
+                        <h5 style="color: #A8D0E6;">Member : #98390322</h5>
+                        <h2>NSS Volunteer</h2>
+                        <h4 style="color: #A8D0E6;">(2021-2023)</h4>
+                        <h2>Shatayu NGO Volunteer</h2>
+                        <h4 style="color: #A8D0E6;">(2022-2023)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="arc" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-7 unho">
+                    <h1 class="wow fadeInRight" data-wow-duration="1s"><i class="fa fa-certificate" style="color: gold;"></i>&nbsp;&nbsp;Achievements</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-2" style="padding-top: 130px;">
+                        <h3 class="wow fadeInDown" data-wow-duration="1s">Introduction to Data and Data Science - <a style="color: #A8D0E6">365 Data Science</a></h3>
+                        <h5 style="color: wheat" class="wow fadeInUp" data-wow-duration="1s">CC-4C6757E39C</h5>
+                        <h3 class="wow fadeInDown" data-wow-duration="2.3s">Advanced Microsoft Excel - <a style="color: #A8D0E6">365 Data Science</a></h3>
+                        <h5 style="color: wheat" class="wow fadeInUp" data-wow-duration="2.3s">CC-3B0794502E</h5>
+                        <h3 class="wow fadeInDown" data-wow-duration="3s">Diploma in Multilingual Computer Programming - <a style="color: #A8D0E6">CDAC</a></h3>
+                        <h5 style="color: wheat" class="wow fadeInUp" data-wow-duration="3s">P012665</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
